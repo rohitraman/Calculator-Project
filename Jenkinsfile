@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    environment {
-        dockerhub=credentials('Docker-Hub')
-    }
     stages {
         stage('Build') {
             steps {
@@ -23,7 +20,9 @@ pipeline {
             steps {
                 
                 sh 'docker tag calculator-project rohitraman/calculator-project'
-                sh 'docker push rohitraman/calculator-project'
+                withDockerRegistry([ credentialsId: "Docker-Hub", url: "" ]) {
+                    sh 'docker push rohitraman/calculator-project'
+                }
             }
         }
     }
