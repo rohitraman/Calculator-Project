@@ -18,7 +18,8 @@ pipeline {
         }
         stage('Docker Run') {
             steps {
-                sh 'docker run calculator-project'
+                sh 'docker tag calculator-project rohitraman/calculator-project'
+                sh 'docker push rohitraman/calculator-project'
             }
         }
     }
