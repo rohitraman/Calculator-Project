@@ -25,6 +25,16 @@ pipeline {
                 }
             }
         }
+        stage('Ansible') {
+            steps {
+                ansiblePlaybook becomeUser: 'null',
+                colorized: true,
+                installation: 'Ansible',
+                inventory: 'inventory',
+                playbook: 'deploy-docker.yml',
+                sudoUser: 'null'
+            }
+        }
     }
 
 }
