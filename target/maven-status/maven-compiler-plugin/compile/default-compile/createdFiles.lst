@@ -1,5 +1,0 @@
-org/example/factory/CalculatorFactory.class
-org/example/interfaces/CalculatorInterface.class
-org/example/Main.class
-org/example/implementation/Factorial.class
-org/example/implementation/SquareRoot.class
