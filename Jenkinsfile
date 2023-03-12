@@ -18,7 +18,9 @@ pipeline {
         }
         stage('Docker Push') {
             steps {
-                sh 'docker rmi rohitraman/calculator-project'
+                catchError(buildResult: 'SUCCESS', stageResult: 'SUCCESS') {
+                    sh 'docker rmi rohitraman/calculator-project'
+                }
                 sh 'docker tag calculator-project rohitraman/calculator-project'
                 sh 'docker rmi calculator-project'
                 withDockerRegistry([ credentialsId: "Docker-Hub", url: "" ]) {
