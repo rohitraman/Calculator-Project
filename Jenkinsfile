@@ -18,12 +18,12 @@ pipeline {
         }
         stage('Docker Push') {
             steps {
+                sh 'docker rmi rohitraman/calculator-project'
                 sh 'docker tag calculator-project rohitraman/calculator-project'
                 sh 'docker rmi calculator-project'
                 withDockerRegistry([ credentialsId: "Docker-Hub", url: "" ]) {
                     sh 'docker push rohitraman/calculator-project'
                 }
-                sh 'docker rmi rohitraman/calculator-project'
             }
         }
         stage('Ansible') {
