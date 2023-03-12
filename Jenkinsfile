@@ -16,10 +16,10 @@ pipeline {
                 sh 'docker build -t calculator-project .'
             }
         }
-        stage('Docker Run') {
+        stage('Docker Push') {
             steps {
-                
                 sh 'docker tag calculator-project rohitraman/calculator-project'
+                sh 'docker rmi calculator-project'
                 withDockerRegistry([ credentialsId: "Docker-Hub", url: "" ]) {
                     sh 'docker push rohitraman/calculator-project'
                 }
@@ -27,12 +27,7 @@ pipeline {
         }
         stage('Ansible') {
             steps {
-                ansiblePlaybook becomeUser: 'null',
-                colorized: true,
-                installation: 'Ansible',
-                inventory: 'inventory',
-                playbook: 'deploy-docker.yml',
-                sudoUser: 'null'
+                sh 'ansible-playbook deploy-docker.yml -i inventory'
             }
         }
     }
