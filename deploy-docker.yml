@@ -4,6 +4,10 @@
   gather_facts: true
   tasks:
 
+    - name: Remove previous image
+      shell: "docker rmi rohitraman/calculator-project"
+      ignore_errors: true
+
     - name: Pull docker container from docker hub
       shell: "docker pull rohitraman/calculator-project"
 
