@@ -3,19 +3,7 @@
   hosts: localhost
   gather_facts: true
   tasks:
-
-    - name: Stop docker container on system
-      shell: "docker stop calculator"
-      ignore_errors: true
-    
-    - name: Remove docker container on system
-      shell: "docker rm calculator"
-      ignore_errors: true
-    
-    - name: Remove previous image
-      shell: "docker rmi rohitraman/calculator-project"
-      ignore_errors: true
-
+  
     - name: Pull docker container from docker hub
       shell: "docker pull rohitraman/calculator-project"
     

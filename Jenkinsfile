@@ -19,6 +19,8 @@ pipeline {
         stage('Docker Push') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'SUCCESS') {
+                    sh 'docker stop calculator'
+                    sh 'docker rm calculator'
                     sh 'docker rmi rohitraman/calculator-project'
                 }
                 sh 'docker tag calculator-project rohitraman/calculator-project'
