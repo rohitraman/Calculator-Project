@@ -30,6 +30,5 @@ public class Main {
             double answer = calculatorInterface.calculate(a);
             System.out.println("Answer:" + answer);
         } while (true);
-
     }
 }
