@@ -15,6 +15,7 @@ public class Main {
         PropertyConfigurator.configure(props);
         Scanner sc = new Scanner(System.in);
         do {
+            sc.nextLine();
             System.out.println("Choose your option:");
             System.out.println("1. Square Root");
             System.out.println("2. Factorial");
