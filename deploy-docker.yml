@@ -8,4 +8,4 @@
       shell: "docker pull rohitraman/calculator-project"
     
     - name: Run docker container on system
-      shell: "docker run -it -d --name calculator rohitraman/calculator-project"
+      shell: "docker run -it -d --name calculator rohitraman/calculator-project" 
