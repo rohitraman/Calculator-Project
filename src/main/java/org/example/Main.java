@@ -19,6 +19,8 @@ public class Main {
             System.out.println("Choose your option:");
             System.out.println("1. Square Root");
             System.out.println("2. Factorial");
+            System.out.println("3. Natural Logarithm");
+            System.out.println("4. Cube of a Number");
 
             int ch = sc.nextInt();
             CalculatorInterface calculatorInterface = CalculatorFactory.get(ch);
