@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Properties props = new Properties();
         props.load(Main.class.getResourceAsStream("/log4j.properties"));
-        PropertyConfigurator.configure(props);
+        PropertyConfigurator.configure(props); 
         Scanner sc = new Scanner(System.in);
         do {
             sc.nextLine();
