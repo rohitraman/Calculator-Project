@@ -1,6 +1,6 @@
 ---
 - name: Deploy Docker Container
-  hosts: localhost
+  hosts: all
   gather_facts: true
   tasks:
   
