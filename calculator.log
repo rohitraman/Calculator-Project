@@ -77,3 +77,19 @@
 2023-03-15 16:37:35,873 - INFO  - Factorial -- Input : 5 Output : 120.0
 2023-03-15 16:37:35,873 - INFO  - Power -- Input : a = 5 b = 3 Output : 125.0
 2023-03-15 16:37:35,874 - INFO  - Square Root -- Input : 4 Output : 2.0
+2023-03-16 10:30:07,918 - INFO  - Factorial -- Input : 6 Output : 720.0
+2023-03-16 10:30:07,922 - INFO  - Square Root -- Input : 5 Output : 2.23606797749979
+2023-03-16 10:30:07,924 - INFO  - Natural Logarithm -- Input : 21 Output : 3.044522437723423
+2023-03-16 10:30:07,936 - INFO  - Power -- Input : a = 5 b = 3 Output : 125.0
+2023-03-16 10:30:07,937 - INFO  - Natural Logarithm -- Input : 21 Output : 3.044522437723423
+2023-03-16 10:30:07,937 - INFO  - Factorial -- Input : 5 Output : 120.0
+2023-03-16 10:30:07,938 - INFO  - Power -- Input : a = 5 b = 3 Output : 125.0
+2023-03-16 10:30:07,939 - INFO  - Square Root -- Input : 4 Output : 2.0
+2023-03-16 10:30:44,181 - INFO  - Factorial -- Input : 6 Output : 720.0
+2023-03-16 10:30:44,185 - INFO  - Square Root -- Input : 5 Output : 2.23606797749979
+2023-03-16 10:30:44,187 - INFO  - Natural Logarithm -- Input : 21 Output : 3.044522437723423
+2023-03-16 10:30:44,203 - INFO  - Power -- Input : a = 5 b = 3 Output : 125.0
+2023-03-16 10:30:44,204 - INFO  - Natural Logarithm -- Input : 21 Output : 3.044522437723423
+2023-03-16 10:30:44,204 - INFO  - Factorial -- Input : 5 Output : 120.0
+2023-03-16 10:30:44,205 - INFO  - Power -- Input : a = 5 b = 3 Output : 125.0
+2023-03-16 10:30:44,205 - INFO  - Square Root -- Input : 4 Output : 2.0

@@ -21,11 +21,17 @@ public class Main {
             System.out.println("2. Factorial");
             System.out.println("3. Natural Logarithm");
             System.out.println("4. Power(a,b)");
+            System.out.println("5. Exit");
+
 
             int ch = sc.nextInt();
+            if (ch == 5) {
+                System.out.println("Exiting");
+                return;
+            }
             CalculateInterface calculatorInterface = CalculatorFactory.get(ch);
             if (calculatorInterface == null) {
-                System.out.println("Invalid option");
+                System.out.println("Sorry invalid option!! Exiting ...");
                 return;
             }
             System.out.println("Enter a number:");
