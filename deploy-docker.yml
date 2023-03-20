@@ -9,7 +9,7 @@
     
     - name: Create calculator.log file
       shell: "touch calculator.log"
-      # ignore_errors: true
+
     - name: ensure file exists
       copy:
         content: ""
