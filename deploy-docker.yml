@@ -4,13 +4,7 @@
   gather_facts: true
   tasks:
 
-    - name: Switch to logs folder
-      shell: "cd /logs"
-    
-    - name: Create calculator.log file
-      shell: "touch calculator.log"
-
-    - name: ensure file exists
+    - name: Create calculator.log file if not exists
       copy:
         content: ""
         dest: /logs/calculator.log
